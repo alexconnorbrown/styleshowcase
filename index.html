@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Effects and Animations Showcase</title>
+</head>
+<body>
+  <section class="container">
+    <h1 class="smooth-scroll">Smooth Scrolling</h1>
+    <div class="toggle-section">
+      <button onclick="toggleElement()">Toggle Element</button>
+      <p id="toggle-paragraph">This is a toggleable element.</p>
+    </div>
+    <div class="slider-section">
+      <h2>Image Slider</h2>
+      <div class="slider">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+    </div>
+    <div class="dropdown-section">
+      <h2>Dropdown Menu</h2>
+      <div class="dropdown">
+        <button onclick="toggleDropdown()">Open Dropdown</button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="#">Item 1</a>
+          <a href="#">Item 2</a>
+          <a href="#">Item 3</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal-section">
+      <h2>Modal Window</h2>
+      <button onclick="openModal()">Open Modal</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>This is a modal window.</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-section">
+      <h2>Parallax Effect</h2>
+      <div class="parallax-bg"></div>
+      <div class="parallax-content">
+        <p>This is a parallax effect.</p>
+      </div>
+    </div>
+    <div class="hover-section">
+      <h2>Hover Effect</h2>
+      <div class="hover-box">
+        <p class="hover-text">Hover over me!</p>
+      </div>
+    </div>
+    <div class="loading-spinner-section">
+      <h2>Loading Spinner</h2>
+      <div class="loading-spinner"></div>
+    </div>
+    <div class="scroll-reveal-section">
+      <h2>Scroll Reveal</h2>
+      <div class="scroll-reveal-box">
+        <p>This will be revealed when you scroll down.</p>
+      </div>
+    </div>
+    <div class="countdown-section">
+      <h2>Countdown Timer</h2>
+      <div id="countdown" class="countdown">00:00:00</div>
+    </div>
+    <div class="particle-section">
+      <h2>Particle Effect</h2>
+      <div class="particles"></div>
+    </div>
+    <div class="svg-animation-section">
+      <h2>SVG Animation</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red">
+          <animate attributeName="r" from="40" to="10" dur="0.5s" begin="0s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+    </div>
+    <div class="drag-and-drop-section">
+      <h2>Drag and Drop</h2>
+      <div id="drag-container" class="drag-container">
+        <div id="draggable" class="draggable" draggable="true">Drag me!</div>
+      </div>
+    </div>
+    <div class="canvas-animation-section">
+      <h2>Canvas Animation</h2>
+      <canvas id="canvas" width="200" height="100"></canvas>
+    </div>
+    <div class="scroll-spy-section">
+      <h2>Scroll Spy</h2>
+      <ul class="scroll-spy-nav">
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </div>
+    <div class="video-background-section">
+      <h2>Video Background</h2>
+      <video autoplay muted loop class="video-bg">
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="scroll-top-section">
+      <h2>Scroll to Top Button</h2>
+      <button onclick="scrollToTop()">Scroll to Top</button>
+    </div>
+    <div class="interactive-form-section">
+      <h2>Interactive Form</h2>
+      <form id="demo-form" class="demo-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="charts-section">
+      <h2>Dynamic Chart</h2>
+      <canvas id="chart" width="400" height="200"></canvas>
+    </div>
+    <div class="transform-3d-section">
+      <h2>3D Transformation</h2>
+      <div class="cube">
+        <div class="face front">Front</div>
+        <div class="face back">Back</div>
+        <div class="face right">Right</div>
+        <div class="face left">Left</div>
+        <div class="face top">Top</div>
+        <div class="face bottom">Bottom</div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js" defer></script>
+</body>
+</html>
